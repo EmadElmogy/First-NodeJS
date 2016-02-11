@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  div(ng-controller='show')
+    h1=title
+    div(ng-repeat='obj in data')
+      h3 {{obj.name}}

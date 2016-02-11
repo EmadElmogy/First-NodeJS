@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	div(ng-controller='main')
+		label Name:
+		input(type='text', ng-model='contact.name')
+
+		label Phone:
+		input(type='text', ng-model='contact.phone')
+
+		pre {{contact}}
+
+		button(ng-click='save()') Save	
