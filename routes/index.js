@@ -25,7 +25,7 @@ router.post('/like/:var1/:var2',function(req,res){
 });
 
 router.get('/likes',function(req,res){
-	// query strings in express (http://localhost:3000/likes?search=count) #emad
+	// query strings in express (http://localhost:3000/likes?search=count)
 	var search = req.query.search;
 	if (database.length == 0) {
 		if (search && search=="count") {

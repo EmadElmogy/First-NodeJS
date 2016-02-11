@@ -15,18 +15,6 @@ router.get('/',function(req,res){
   res.send("hello there");
 });
 
-// router.post('/sav',function(req,res){
-//     var nuser=new userModel();
-//      nuser.name=name;
-//      nuser.password=password;
-//      nuser.save(function(err,res){
-//         if (err) {
-//           alert("error from nodejs");
-//         }else{
-//           alert("success from nodejs");
-//         }
-//      });
-// });
 
 router.post('/save/:name/:password',function(req,res){
         var name=req.params.name;
